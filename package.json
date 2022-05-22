@@ -1,0 +1,24 @@
+{
+  "name": "cloud-run-boilerplate",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "rm -rf dist && tsc --sourceMap -p ./",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+  },
+  "dependencies": {
+    "dotenv-flow": "^3.2.0",
+    "nanoid": "3.3.4",
+    "ramda": "0.28.0",
+    "ramda-adjunct": "3.1.0",
+    "source-map-support": "0.5.21"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.35",
+    "@types/ramda": "0.28.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "4.6.4"
+  }
+}
